@@ -1,0 +1,35 @@
+{
+    "name": "layliaiyong/errode",
+    "description": "error code",
+    "type": "project",
+    "keywords": ["error","code"],
+    "support": {
+        "issues": "https://github.com/layliaiyong/errode/issues",
+        "source": "https://github.com/layliaiyong/errode"
+    },
+    "homepage": "http://liaiyong.com/",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "lay",
+            "email": "lay@liaiyong.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~6.2",
+        "friendsofphp/php-cs-fixer": "^2.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Lay\\Errode\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Lay\\Errode\\Tests\\": "tests"
+        }
+    }
+}
