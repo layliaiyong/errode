@@ -24,7 +24,8 @@ class Errode extends Exception
                 $errcode = eval("static::$define");
             }
         } else {
-            $errcode = eval($define);print_r($errcode);exit;
+            print_r("\$errcode = $define;");exit;
+            eval("\$errcode = $define");//$errcode = eval($define);
         }
 
         if(preg_match('/^(\d+)\|(.*)$/', $errcode, $matches) == 0) {
